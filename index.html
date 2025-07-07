@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNST Staking - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="assets/logo.png" alt="VNST Logo" class="logo">
+        <div class="menu-toggle">☰</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="staking.html">Staking</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><button id="walletConnectBtn" class="wallet-connect-btn">Connect Wallet</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <h2>VNST Staking Dashboard</h2>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Total Staked VNST</h3>
+                    <p id="totalStaked">0 VNST</p>
+                    <p>Across all users</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Your Staked VNST</h3>
+                    <p id="userStaked">0 VNST</p>
+                    <p>Currently earning rewards</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Total Withdrawn</h3>
+                    <p id="totalWithdrawn">0 VNST</p>
+                    <p>By all users</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Active Stakers</h3>
+                    <p id="activeStakers">0</p>
+                    <p>Currently participating</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Your VNT Rewards</h3>
+                    <p id="vntRewards">0 VNT</p>
+                    <p>Available to claim</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Your USDT Rewards</h3>
+                    <p id="usdtRewards">0 USDT</p>
+                    <p>Available to claim</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 V Network Services. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
