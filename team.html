@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNST Staking - Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="assets/logo.png" alt="VNST Logo" class="logo">
+        <div class="menu-toggle">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="staking.html">Staking</a></li>
+            <li><a href="team.html" class="active">Team</a></li>
+            <li><button id="walletConnectBtn" class="wallet-connect-btn">Connect Wallet</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <h2>Your Team Network</h2>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Direct Members (<span id="directCount">0</span>)</h3>
+                    <div id="directMembersList" style="max-height: 300px; overflow-y: auto;">
+                        <p>No direct members yet</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Team Statistics</h3>
+                    <p>Total Team: <span id="totalTeam">0</span> members</p>
+                    <p>Total Team Staked: <span id="teamStaked">0</span> VNST</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Level 1 (<span id="level1Count">0</span>)</h3>
+                    <p>Status: <span id="level1Status" class="status-active">Active</span></p>
+                    <p>Total Staked: <span id="level1Staked">0</span> VNST</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Level 2 (<span id="level2Count">0</span>)</h3>
+                    <p>Status: <span id="level2Status" class="status-locked">Locked</span></p>
+                    <p>Total Staked: <span id="level2Staked">0</span> VNST</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Level 3 (<span id="level3Count">0</span>)</h3>
+                    <p>Status: <span id="level3Status" class="status-locked">Locked</span></p>
+                    <p>Total Staked: <span id="level3Staked">0</span> VNST</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Level 4 (<span id="level4Count">0</span>)</h3>
+                    <p>Status: <span id="level4Status" class="status-locked">Locked</span></p>
+                    <p>Total Staked: <span id="level4Staked">0</span> VNST</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Level 5 (<span id="level5Count">0</span>)</h3>
+                    <p>Status: <span id="level5Status" class="status-locked">Locked</span></p>
+                    <p>Total Staked: <span id="level5Staked">0</span> VNST</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 V Network Services. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
