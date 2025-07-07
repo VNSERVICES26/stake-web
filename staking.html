@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNST Staking - Stake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="assets/logo.png" alt="VNST Logo" class="logo">
+        <div class="menu-toggle">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="staking.html" class="active">Staking</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><button id="walletConnectBtn" class="wallet-connect-btn">Connect Wallet</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <h2>VNST Staking Platform</h2>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Your Wallet</h3>
+                    <p id="walletAddress">Not connected</p>
+                    <p>VNST Balance: <span id="vnstBalance">0</span></p>
+                </div>
+                
+                <div class="card">
+                    <h3>Staking Details</h3>
+                    <p>Min Stake: <span id="minStake">100</span> VNST</p>
+                    <p>Max Stake: <span id="maxStake">10000</span> VNST</p>
+                    <input type="number" id="stakeAmount" placeholder="Enter VNST amount">
+                    <input type="text" id="referralAddress" placeholder="Referral address (optional)">
+                    <button id="approveMaxBtn" class="btn">Approve Max</button>
+                    <button id="stakeBtn" class="btn">Stake VNST</button>
+                </div>
+                
+                <div class="card">
+                    <h3>Your Staking Stats</h3>
+                    <p>Active Stake: <span id="activeStake">0</span> VNST</p>
+                    <p>Direct Members: <span id="directMembers">0</span></p>
+                    <p>Total Earned: <span id="totalEarned">0</span> VNT</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Claim Rewards</h3>
+                    <p>Pending VNT: <span id="pendingVNT">0</span></p>
+                    <p>Pending USDT: <span id="pendingUSDT">0</span></p>
+                    <button id="claimTokenBtn" class="btn">Claim VNT</button>
+                    <button id="claimUsdtBtn" class="btn">Claim USDT</button>
+                </div>
+                
+                <div class="card">
+                    <h3>Referral Link</h3>
+                    <p id="referralLink" style="word-break: break-all;">Connect wallet to get your referral link</p>
+                    <button id="copyReferralBtn" class="btn">Copy Link</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 V Network Services. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
